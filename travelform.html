@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/travelform.css"/>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <form action="/action_page.php">
+            <input list="destination" placeholder="Destination"/>
+            <datalist id="destination">
+                <option value="Aruba"></option>
+                <option value="Jamaica"></option>
+                <option value="Key Largo"></option>
+            </datalist>
+            <input type="text" name="firstName" placeholder="First Name"/>
+            <input type="text" name="lastName" placeholder="Last Name"/>
+            <input type="number" name="age" placeholder="Age"/>
+            Female: <input type="radio" name="gender" value="Female"/>
+            Male: <input type="radio" name="gender" value="Male"/>
+            Other: <input type="radio" name="gender" value="Other"/>
+            Decline to answer: <input type="radio" name="gender" value="Decline to answer"/>
+            <input type="checkbox" id="restrictions" name="Vegan" value="Vegan">
+            <label for="Vegan"> Vegan </label>
+            <input type="checkbox" id="restrictions" name="Vegetarian" value="Vegetarian">
+            <label for="Vegetarian"> Veggie </label>
+            <input type="checkbox" id="restrictions" name="Gluten-Free" value="Gluten-Free">
+            <label for="Gluten-Free"> Gluten-Free </label>
+            <input type="submit" name="submit">
+        </form>
+        <script src="travelform.js"></script>
+    </body>
+</html>
