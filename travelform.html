@@ -6,28 +6,36 @@
     </head>
 
     <body>
-        <form action="/action_page.php">
-            <input list="destination" placeholder="Destination"/>
+        <form name="travelerInfo" action="/action_page.php">
+            <input name="destination" class="textInput"list="destination" placeholder="Destination"/>
             <datalist id="destination">
                 <option value="Aruba"></option>
                 <option value="Jamaica"></option>
                 <option value="Key Largo"></option>
             </datalist>
-            <input type="text" name="firstName" placeholder="First Name"/>
-            <input type="text" name="lastName" placeholder="Last Name"/>
-            <input type="number" name="age" placeholder="Age"/>
-            Female: <input type="radio" name="gender" value="Female"/>
-            Male: <input type="radio" name="gender" value="Male"/>
-            Other: <input type="radio" name="gender" value="Other"/>
-            Decline to answer: <input type="radio" name="gender" value="Decline to answer"/>
-            <input type="checkbox" id="restrictions" name="Vegan" value="Vegan">
-            <label for="Vegan"> Vegan </label>
-            <input type="checkbox" id="restrictions" name="Vegetarian" value="Vegetarian">
-            <label for="Vegetarian"> Veggie </label>
-            <input type="checkbox" id="restrictions" name="Gluten-Free" value="Gluten-Free">
-            <label for="Gluten-Free"> Gluten-Free </label>
+            
+            <input class="textInput"type="text" name="firstName" placeholder="First Name"/>
+            <input class="textInput"type="text" name="lastName" placeholder="Last Name"/>
+            <input class="textInput"type="number" name="age" placeholder="Age"/>
+            
+            <div class="selectContainer">
+                <div class="gender"><input type="radio" name="gender" value="Female"/>Female</div>
+                <div><input type="radio" name="gender" value="Male"/>Male </div>
+                <div><input type="radio" name="gender" value="Other"/>Other</div>
+                <div><input type="radio" name="gender" value="Decline to answer"/>Decline to answer</div>
+            </div>
+
+            <div class="selectContainer">
+                <input type="checkbox" id="restrictions" name="Food" value="Vegan">
+                <label for="Vegan"> Vegan </label>
+                <input type="checkbox" id="restrictions" name="Food" value="Vegetarian">
+                <label for="Vegetarian"> Veggie </label>
+                <input type="checkbox" id="restrictions" name="Food" value="Gluten-Free">
+                <label for="Gluten-Free"> Gluten-Free </label>
+            </div>
+
             <input type="submit" name="submit">
         </form>
-        <script src="travelform.js"></script>
+        <script src="/travelform.js"></script>
     </body>
 </html>
